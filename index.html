@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noah Födisch – Mobiler Barkeeper Köln, Bonn & Düsseldorf</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px 10px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    nav {
+      background: #444;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
+      background: #fff;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      border-radius: 6px;
+    }
+    h2 {
+      color: #222;
+      margin-top: 30px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: "✅";
+      margin-right: 8px;
+      color: #2c9a4f;
+    }
+    footer {
+      text-align: center;
+      padding: 15px 10px;
+      background: #222;
+      color: #aaa;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+    form {
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px 0;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #2c9a4f;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #257a3b;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Noah Födisch – Mobiler Barkeeper</h1>
+    <p>Events in Köln, Bonn & Düsseldorf</p>
+  </header>
+  <nav>
+    <a href="#angebot">Angebot</a>
+    <a href="#preise">Preise & Service</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="#ueber">Über mich</a>
+  </nav>
+  <main>
+    <section id="angebot">
+      <h2>Mein Angebot</h2>
+      <p>Du planst ein Event und möchtest deinen Gästen besondere Cocktails bieten? Ich biete professionellen Service und individuelle Cocktailkreationen für Hochzeiten, Firmenfeiern, Geburtstage und mehr.</p>
+      <ul>
+        <li>Individuelle Cocktailkarte nach deinen Wünschen</li>
+        <li>Professionelles Equipment: Shaker, Jigger, Ausgießer & mehr</li>
+        <li>Aufbau an deiner Theke oder einem Tisch vor Ort</li>
+        <li>Einkauf der Zutaten auf Wunsch, transparent abgerechnet</li>
+      </ul>
+    </section>
+
+    <section id="preise">
+      <h2>Preise & Service</h2>
+      <p>Faire und transparente Preise, ideal für private Feiern und kleinere Budgets.</p>
+      <p>Einsatzgebiet: Köln, Bonn, Düsseldorf und Umgebung</p>
+      <p>Termine flexibel und auch kurzfristig möglich.</p>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p>Schreib mir jetzt, um dein Event zu planen!</p>
+      <form action="https://formsubmit.co/your-email@example.com" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="eventdatum">Event-Datum</label>
+        <input type="date" id="eventdatum" name="eventdatum" required />
+
+        <label for="gaesteanzahl">Gästeanzahl</label>
+        <input type="number" id="gaesteanzahl" name="gaesteanzahl" min="1" required />
+
+        <label for="nachricht">Nachricht / Getränkewünsche</label>
+        <textarea id="nachricht" name="nachricht"></textarea>
+
+        <!-- versteckte Eingaben für Formsubmit -->
+        <input type="hidden" name="_captcha" value="false" />
+        <button type="submit">Anfrage senden</button>
+      </form>
+      <p><small>Deine Daten werden vertraulich behandelt.</small></p>
+    </section>
+
+    <section id="ueber">
+      <h2>Über mich</h2>
+      <p>Ich bin Noah Födisch, Barkeeper mit mehreren Jahren Erfahrung in Bars und auf Events. Meine Leidenschaft ist es, dein Event mit leckeren Drinks und professionellem Service unvergesslich zu machen – fair, persönlich und flexibel.</p>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Noah Födisch | Mobiler Barkeeper | Impressum | Datenschutz</p>
+  </footer>
+</body>
+</html>
